@@ -2,7 +2,7 @@ syncUp
 =================
 Run code across tabs/browsers at the same time, by the help of a socket.io server and callbacks.
 
-There is probably minimal uses for this. I created this in an attempt to sync Web Audio API synthesizers/drums accross browsers. 
+There is probably minimal uses for this, and its not that robust. I created this in a quick attempt to sync Web Audio API synthesizers/drums accross tabs. 
 
 Usage
 ----------------
@@ -13,13 +13,13 @@ Usage
 
 3. Connect the syncup's to the server
 
-    syncup({
-        socketUrl: 'http://localhost:8080',
-        trigger: true,
-        timeout: 5,
-        callback: function() {
-            console.log('tab #1');
-        }
-    });
+        syncup({
+            socketUrl: 'http://localhost:8080',
+            trigger: true,
+            timeout: 5,
+            callback: function() {
+                console.log('tab #1');
+            }
+        });
 
 This snippet will tell all other syncups connected to the server to execute their callback function in 5 seconds. If `trigger` had been false or not set, nothing would have happened until another syncup connected with the `trigger` flag set to true.
