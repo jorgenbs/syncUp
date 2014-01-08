@@ -6,7 +6,7 @@
     "synchronize",
     "callback",
     "socket.io"
-  ]
+  ],
   "main": "lib/syncup.js",
   "scripts": {
     "test": "jasmine-node spec/"
