@@ -9,7 +9,7 @@ Usage
 1. Start the server (default port 8080)
 `node lib/server.js` 
 
-2. Inject the script onto the page(s) where you want to run your stuff (you need to inject socket.io-client as well).
+2. Add the script onto the page(s) where you want to run your stuff (you need to add socket.io-client as well).
 
 3. Connect the syncup's to the server
 
